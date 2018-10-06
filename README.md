@@ -1,6 +1,21 @@
 # App
 
-**TODO: Add description**
+Start the application with
+
+```elixir
+App.accept(9000)
+```
+
+Then go into another shell session and type in
+
+```bash
+telnet localhost 9000
+```
+
+Do it again for another window.
+
+Start chatting and see results. It's hideous! But it scales well with the only bottleneck being the genserver's speed of inserting/fetching the state. 
+
 
 ## Installation
 
